@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(46, 206, 206);
+            margin: 60px;
+            padding: 50px;
+            border: 5px solid black;
+            box-sizing: border-box;
+        }
+        a img {
+            width: 210px;
+            height: 180px;
+        }
+        a img:before {
+            content: "demo";
+        }
+        p::before {
+            content: "read this -";
+        }
+    </style>
+</head>
+<body>
+    <div class="demo">
+        abcd
+    </div>
+    <a href="https://www.facebook.com/panda.huan.9"><img src="Girl fb.jpg"></a>
+    <p>abcd</p>
+</body>
+</html>
