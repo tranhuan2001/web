@@ -1,0 +1,10 @@
+.main-content .row .col {
+    height: 250px;
+    background-image: url(../learning\ PHP.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top right;
+    background-size: 30%;
+    overflow: visible;
+    border: 1px solid rgb(150, 149, 149);
+}
