@@ -1,7 +1,7 @@
-.header .row .col a {
+.header .row .col-4 a {
     text-decoration: none;
     color: black;
 }
-.header .row .col {
+.header .row .col-4 {
     margin-top: 12px;
 }

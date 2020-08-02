@@ -1,4 +1,4 @@
-.main-content .row .col {
+.main-content .row .col-6 {
     height: 250px;
     background-image: url(../learning\ PHP.jpg);
     background-repeat: no-repeat;
@@ -6,5 +6,6 @@
     background-position: top right;
     background-size: 30%;
     overflow: visible;
-    border: 1px solid rgb(150, 149, 149);
+    border: 2px solid rgb(150, 149, 149);
+    margin: 48px 0;
 }
