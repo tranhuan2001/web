@@ -1,0 +1,45 @@
+.header {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(20, 181, 20);
+    text-align: center;
+}
+.menu {
+    width: 60%;
+    height: 100px;
+    background-color: aqua;
+    margin-left: 20%;
+    display: inline-block;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+}
+.sidebar {
+    width: 20%;
+    height: 500px;
+    background-color: blueviolet;
+    margin-left: 20%;
+    display: inline-block;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.main-content {
+    width: 40%;
+    height: 500px;
+    background-color: brown;
+    margin-left: 40%;
+    display: inline-block;
+    position: relative;
+    top: -500px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(0, 201, 0);
+    text-align: center;
+    position: relative;
+    top: -500px;
+}
