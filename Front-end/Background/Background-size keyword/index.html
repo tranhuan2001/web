@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background-size keyword</title>
+    <style>
+        html, body {
+            margin: 0;
+        }
+        .header {
+            width: 100%;
+            height: 100vh;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmJ_QKLu-wihyBS0KtzGvZ-Q47wsT-HwepbXeycUGWEikAOrd_uvQFmE8Ia3F1lTet-Uc&usqp=CAU);
+            background-size: contain;
+            /* background-size: cover; */
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h4>background-size: contain;</h4>
+        <p>contain: lấy chiều dài nhất của ảnh nền, chấp nhận khoảng trắng</p>
+        <h4>background-size: cover;</h4>
+        <p>cover: lấy chiều dài nhất của ảnh nền, không chấp nhận khoảng trắng</p>
+    </div>
+</body>
+</html>

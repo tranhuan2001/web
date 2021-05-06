@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background-origin</title>
+    <style>
+        html, body {
+            margin: 0;
+        }
+        .header {
+            width: 100%;
+            height: 100vh;
+            background-image: url(https://pdp.edu.vn/wp-content/uploads/2021/01/hinh-anh-girl-xinh-toc-ngan-de-thuong-580x362.jpg);
+            padding: 20px;
+            border: 10px dashed aqua;
+            box-sizing: border-box;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            /* background-origin: padding-box; */
+            /* background-origin: border-box; */
+            background-origin: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h4>background-origin: padding-box;</h4>
+        <p>origin: padding-box: đổ màu từ padding</p>
+        <h4>background-origin: border-box;</h4>
+        <p>origin: border-box: đổ màu từ border</p>
+        <h4>background-origin: content-box;</h4>
+        <p>origin: content-box: đổ màu từ content</p>
+    </div>
+</body>
+</html>
