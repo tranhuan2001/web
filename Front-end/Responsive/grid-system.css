@@ -51,8 +51,8 @@
 }
 
 .c-4 {
-    flex: 0 0 25%;
-    max-width: 25%;
+    flex: 0 0 calc(4/12 * 100%);
+    max-width: calc(4/12 * 100%);
 }
 
 .c-5 {
@@ -186,8 +186,8 @@
     }
     
     .m-4 {
-        flex: 0 0 25%;
-        max-width: 25%;
+        flex: 0 0 calc(4/12 * 100%);
+        max-width: calc(4/12 * 100%);
     }
     
     .m-5 {
