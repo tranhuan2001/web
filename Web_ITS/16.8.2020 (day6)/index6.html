@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getABC(){
+            var num = document.getElementById('number').value;
+            document.write(num * num);
+        }
+    </script>
+</head>
+<body>
+    <pre>
+        các phương thức của đối tượng Document hay dùng
+            getElementsById(): trả về phần tử có id đã chọn
+
+            getElementsByTagName(): trả về phần tử theo các thẻ html
+
+            getElementsByClassName(): trả về phần tử theo các class đã đặt
+
+    </pre>
+
+    <form>
+        <input type="text" id="number">
+        <input type="submit" value="fish" onclick="getABC()">
+    </form>
+</body>
+</html>

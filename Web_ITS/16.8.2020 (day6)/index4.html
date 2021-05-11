@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate(){
+            var count=document.myForm.dem.value.length;
+            // myForm: để xác định được form mình muốn lấy dữ liệu là form nào
+            // dem: là thành phần name ở input
+            // value: là giá trị của ô input mình muốn lấy
+            //length: đếm số kí tự mà mình nhập vào từ ô input
+            alert(count);
+        }
+    </script>
+</head>
+<body>
+    <form name="myForm">
+        <input type="text" name="dem">
+        <input type="submit" onclick="validate()" value="Count">
+    </form>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    --- LÀM VIỆC VỚI CHUỖI ---
+    cú pháp khai báo CHUỖI
+        var abc="Javascript ITSUP";
+    <pre>
+        - length: do độ dài của CHUỖI
+        - find index: tìm vị trí của CHUỖI
+        - cut string: cắt CHUỖI
+        - replace: thay thế
+        - convert to upper case: chuyển chuỗi thành chữ in hoa
+        - convert to lower case: chuyển chuối thành chữ in thường
+        - trim: loại bỏ các khoảng trống
+        - split: cắt 1 chuỗi thành array
+    </pre>
+    <script>
+        var demo="IT supporter";
+        //* length
+        // console.log(demo.length);
+
+        //* indexOf
+        // console.log(demo.indexOf("r", 9)); // dấu , trong ("r", 9) là thể hiện thứ tự của chữ "r" thứ 2. Chữ đầu tiên vị trí thứ 8
+        
+        //* cut string
+        //console.log(demo.slice(a, b)); -> a là vị trí đầu, b là vị trí cuối
+        // console.log(demo.slice(3, 6));
+        
+        //* replace
+        // console.log(demo.replace(/p/g, 'a'));
+        //thay tất cả chữ p -> a
+
+        //* convert to upper case và convert to lower case
+        // console.log(demo.toLocaleUpperCase());
+        // console.log(demo.toLocaleLowerCase());
+
+        //* loại bỏ các khoảng trắng thừa
+        // var demo2="   abc   ";
+        // console.log(demo2.trim());
+
+        //* split cắt chuỗi thành mảng(array)
+        var language="php, C#, Java, C++";
+        console.log(language.split(",")); //ngăn cách bởi dấu ","
+        
+    </script>
+</body>
+</html>

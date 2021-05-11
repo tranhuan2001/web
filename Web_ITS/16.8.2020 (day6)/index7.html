@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //vd: nhập mật khẩu có độ dài lớn hơn 8 thì in ra mật khẩu mạnh, còn bé hơn thì in ra mật khẩu yếu
+        function validate() {
+            var abc;
+            if (document.myForm.userPass.value.length > 8) {
+                abc = "mạnh";
+            }
+            else {
+                abc = "yếu";
+            }
+            document.getElementById('cout').innerText=abc;// xuất giá trị của biến abc ra thẻ chứa id mà mình gọi đến
+        }
+
+    </script>
+</head>
+<body>
+    <form name="myForm">
+        <input type="password" value="" name="userPass" onkeyup="validate()">
+        mật khẩu: <span id="cout"></span>
+    </form>
+</body>
+</html>
