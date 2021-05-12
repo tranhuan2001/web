@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Table</title>
+   <style>
+      table {
+         width: 100%;
+      }
+      table, th, td {
+         border: 1px solid black;
+         /* border-collapse: collapse; thuộc tính thu gọn đường viền ô */
+         border-spacing: 5px; 
+         /* border-spacing: đặt khoảng cách giữa các ô, khi có thuộc tích border-collapse thì border-spacing ko có tác dụng */
+      }
+   </style>
+</head>
+<body>
+   <table>
+      <caption>Thẻ caption đặt sau thẻ table</caption>
+      <tr>
+         <th colspan="2" class="colspan">Chữ in hoa căn giữa</th>
+         <th>Chữ in hoa căn giữa</th>
+      </tr>
+      <tr>
+         <td rowspan="2">Chữ thường căn trái</td>
+         <td>Chữ thường căn trái</td>
+         <td>Chữ thường căn trái</td>
+      </tr>
+      <tr>
+         <td style="color: red;">Chữ thường căn trái</td>
+      </tr>
+      <tr>
+         <td style="color: orange;">Chữ thường căn trái</td>
+      </tr>
+   </table>
+</body>
+</html>
