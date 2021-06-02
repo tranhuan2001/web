@@ -26,17 +26,18 @@ var courses = [
    }
 ]
 
-// courses.forEach(function(course, index) {
-//    console.log(index, course)
-// })
+courses.forEach(function(course, index, array) {
+   console.log(index, course, array)
+})
 
-Array.prototype.forEach2 = function(callback, index) {
-   var arrayLength = this.length
-   for (var i = 0; i < arrayLength; ++i) {
-      callback(this[i], i)
+Array.prototype.forEach2 = function(callback) {
+   for (var index in this) {
+      if (this.hasOwnProperty(index)) {
+         callback(this[index], index, this)
+      }
    }
 }
 
-courses.forEach2(function(course, index) {
-   console.log(index, course)
+courses.forEach2(function(course, index, array) {
+   console.log(index, course, array)
 })
