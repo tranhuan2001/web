@@ -26,25 +26,27 @@ var courses = [
    }
 ]
 
-var isFree = courses.some(function(course) {
-   return course.coin == 0
+var isFree = courses.some(function(course, index, array) {
+   console.log(index)
+   return course.coin === 0
 })
 
 console.log(isFree)
 
 Array.prototype.some2 = function(callback) {
-   var arrayLength = this.length
-   for (var i = 0; i < arrayLength; ++i) {
-      if (callback(this[i], i)) {
-         return true
+   for (var index in this) {
+      if (this.hasOwnProperty(index)) {
+         if (callback(this[index], index, this)) {
+            return true
+         }
       }
    }
    return false
 }
 
-var isFree2 = courses.some2(function(course, index) {
+var isFree2 = courses.some2(function(course, index, array) {
    console.log(index)
-   return course.coin == 0
+   return course.coin === 0
 })
 
 console.log(isFree2)
