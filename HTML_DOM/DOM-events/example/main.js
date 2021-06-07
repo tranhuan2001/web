@@ -43,3 +43,16 @@ inputElementText.onkeyup = function(e) {
    }
 }
 // keydown: thực thi ngay khi nhấn phím
+
+// 3. preventDefault: hủy mặc định của 1 thuộc tính
+// 4. stopPropagation: hủy tính nổi bọt mặc định
+var aElements = document.links
+console.log(aElements)
+
+for (var i = 0; i < aElements.length; ++i) {
+   aElements[i].onclick = function(e) {
+      if (!e.target.href.startsWith('https://www.youtube.com/')) {
+         e.preventDefault();
+      }
+   }
+}
