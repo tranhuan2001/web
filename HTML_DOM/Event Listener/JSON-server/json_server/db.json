@@ -1,0 +1,9 @@
+{
+   "courses": [
+      {
+         "id": 1,
+         "name": "Kiến thức cơ bản, cốt lõi dân IT cần học trước",
+         "description": "Kiến thức cơ bản dành cho dân IT, không phân biệt bạn theo Front-end, Back-end hay Devops"
+      }
+   ]
+}
