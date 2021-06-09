@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Fetch example</title>
+</head>
+<body>
+   <div class="courses-wrap">
+      <h2 class="courses__heading">Danh sách khóa học</h2>
+      <ul id="courses__list" class="courses__list"></ul>
+   </div>
+
+   <div class="create-course">
+      <div class="create-course__name">
+         <label>Name</label>
+         <input type="text" name="name">
+      </div>
+      <div class="create-course__description">
+         <label>Description</label>
+         <input type="text" name="description">
+      </div>
+      <button id="create-course__btn" class="create-course__btn" style="display: block;">CREATE</button>
+      <button id="update-course__btn" class="update-course__btn" style="display: none;">UPDATE</button>
+   </div>
+
+   <script src="./app.js"></script>
+</body>
+</html>
