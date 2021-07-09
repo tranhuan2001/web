@@ -1,0 +1,65 @@
+# https://getbootstrap.com/
+
+# Các class trong Grid Bootstrap: 6 class
+   - xs (các thiết bị phone)
+   - sm (máy tính bảng, tablet)
+   - md (màn hình desktop)
+   - lg (mà hình desktop cỡ lớn hơn)
+   - xl
+   - xxl
+
+   - grid: https://getbootstrap.com/docs/5.0/layout/grid/
+
+   $grid-columns:      12;
+   $grid-gutter-width: 1.5rem (.75rem on left and right);
+
+   $grid-breakpoints: (
+      xs: 0,
+      sm: 576px,
+      md: 768px,
+      lg: 992px,
+      xl: 1200px,
+      xxl: 1400px
+   );
+
+   $container-max-widths: (
+      sm: 540px,
+      md: 720px,
+      lg: 960px,
+      xl: 1140px,
+      xxl: 1320px
+   );
+
+# Cú pháp:
+   <div class="container">
+      <div class="row">
+         <div class="col-*-*"></div>
+         <div class="col-*-*"></div>
+      </div>
+   </div>
+
+   - Trong đó: * (1): thiết bị
+               * (2): số cột muốn gộp
+
+   $grid-gutter-width: 1.5rem;
+   $gutters: (
+      0: 0,
+      1: $spacer * .25,
+      2: $spacer * .5,
+      3: $spacer,
+      4: $spacer * 1.5,
+      5: $spacer * 3,
+   );
+
+   <div class="container">
+      <div class="row g-*">
+         <div class="col-*-*"></div>
+         <div class="col-*-*"></div>
+      </div>
+   </div>
+   
+   .g-* : gutter (x, y) example g-2: tạo khoảng cách giữa các cột là 2px trên và dưới
+   .gx-* : Ox
+   .gy-* : Oy
+
+#
