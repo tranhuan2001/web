@@ -1,0 +1,106 @@
+# JSX (Javascript Syntax Extension - JS XML): viết theo kiểu XML. Thay thế cho React.createElement()
+
+# JSX không phải HTML nhưng có thể viết giống HTML
+
+# Thuộc tính class => className
+
+# Website: HTML to JSX
+   https://magic.reactjs.net/htmltojsx.htm
+
+# Hiển thị biến và các đối tượng thêm cụm dấu { }
+
+# Props: truyền dữ liệu từ cha -> con, theo dạng key="value"
+   this.props.key
+
+   - Với các giá trị trong thẻ (innerText):
+   this.props.children
+
+# Xử lý sự kiện:
+   - example: 
+      <div onClick={this.functionName()}></div>
+      <div onClick={() => this.functionName()}></div>
+
+   - Khai báo 1 constructor. example:
+      constructor(props) {
+         super(props)
+         this.functionName = this.functionName.bind(this)
+      }
+
+      functionName(var) {
+         ...
+      }
+
+      render() {
+         return (
+            <div onClick={this.functionName('text')}></div>
+         )
+      }
+
+   - Cách 3. example:
+      functionName = () => {
+         ...
+      }
+
+      <div onClick={this.functionName('text')}></div>
+
+# Refs: lấy giá trị qua refs.
+   
+   example: lấy giá trị các thẻ input
+
+   functionName = () => {
+      console.log(this.refs.key.value)
+   }
+
+   <input ref="key" onClick={this.functionName()} />
+
+# State: là trạng thái của component, khai báo những giá trị riêng của component đó
+
+- Tạo state tại constructor: this.state = {key: value, key1: value1...}
+
+- Gọi state: this.state.key
+
+- Sửa dữ liệu trong state: this.setState({key: value, key1: value1....})
+
+- example:
+   constructor(props) {
+      super(props)
+      this.state = {
+         products = [
+            {
+               ...
+            },
+            {
+               ...
+            },
+            {
+               ...
+            },
+         ],
+         isActive: true
+      }
+   }
+
+   onSetActive = () => {
+      this.setState({
+         isActive: !this.state.isActive
+      })
+   }
+
+   render() {
+      return (
+         <button onClick={ this.onSetActive() }>
+            Active: { this.state.isActive === true ? 'true' : 'false' }
+         </button>
+      )
+   }
+
+# So sánh Props và State:
+                         Props                     |                                 State
+   - Nhận dữ liệu từ bên ngoài                     |  - Dữ liệu nội bộ
+                                                   |
+   - Không thể thay đổi giá trị                    |  - Có thể thay đổi giá trị
+                                                   |
+                                                   |  - Phạm vi sử dụng Private trong component
+                                                   |
+
+# 
