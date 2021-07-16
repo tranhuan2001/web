@@ -1,0 +1,114 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+
+html {
+   box-sizing: border-box;
+}
+/* 
+.text-center {
+   text-align: center;
+} */
+
+.mt-20 {
+   margin-top: 20px;
+}
+
+/* panel */
+.panel {
+   border-radius: 10px;
+   border: 1px solid antiquewhite;
+   background-color: #fff;
+   overflow: hidden;
+}
+
+.panel-heading {
+   display: flex;
+   justify-content: space-between;
+   padding: 0 16px;
+   align-items: center;
+   background-color: antiquewhite;
+   color: rgb(240, 153, 39);
+   min-height: 46px;
+}
+
+.panel-heading h4 {
+   font-size: 1.6rem;
+   margin: 0;
+}
+
+.panel-heading i {
+   font-size: 1.4rem;
+}
+
+.panel-body {
+   padding: 16px;
+}
+
+.form-group label {
+   font-weight: bold;
+   margin-bottom: 4px;
+}
+
+table, td, th {
+   border: 1px solid #ddd;
+}
+
+table {
+   border-spacing: 0;
+}
+
+.table>:not(:last-child)>:last-child>* {
+   border-bottom-color: #ddd;
+}
+
+th, td {
+   vertical-align: middle;
+}
+
+.label {
+   padding: 4px 8px;
+}
+
+.label.label-danger {   
+   background-color: rgb(247, 183, 64);
+   cursor: pointer;
+}  
+
+.label.label-success {
+   background-color: greenyellow;
+   cursor: pointer;
+}
+
+.panel-heading i:hover {
+   cursor: pointer;
+}
+
+.divider {
+   border-bottom: 2px solid #eee;
+}
+
+.dropdown-toggle:hover .dropdown-menu {
+   display: block;
+}
+
+.dropdown-menu {
+   top: 100%;
+   left: 0;
+}
+
+.sort_selected::after {
+   content: '\f00c';
+   font-family: "Font Awesome 5 Free";
+   font-weight: 900;
+   font-style: normal;
+   margin: 0 0 0 10px;
+   display: inline-block;
+}
+
+.btn:focus,
+.btn:active {
+   box-shadow: none;
+}
