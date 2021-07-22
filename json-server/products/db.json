@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Iphone XS",
+      "price": "1000",
+      "status": true
+    },
+    {
+      "id": 2,
+      "name": "Iphone X",
+      "price": "900",
+      "status": true
+    },
+    {
+      "id": 3,
+      "name": "Ipad 4",
+      "price": "500",
+      "status": false
+    },
+    {
+      "id": 4,
+      "name": "Samsung S7",
+      "price": "900",
+      "status": true
+    }
+  ]
+}

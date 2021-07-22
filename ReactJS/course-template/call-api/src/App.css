@@ -1,0 +1,36 @@
+.mt-30 {
+   margin-top: 30px;
+}
+
+.mb-20 {
+   margin-bottom: 20px;
+}
+
+.mb-10 {
+   margin-bottom: 10px;
+}
+
+.mr-10 {
+   margin-right: 10px;
+}
+
+.label {
+   padding: 4px 8px;
+   color: #fff;
+}
+
+.label-success {
+   background-color: #198754;
+}
+
+.label-danger {
+   background-color: #dc3545;
+}
+
+.align-middle {
+   vertical-align: middle;
+}
+
+.text-center {
+   text-align: center;
+}

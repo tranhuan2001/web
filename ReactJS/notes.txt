@@ -1,3 +1,10 @@
+# Create app
+   - new react app: npx create-react-app my-app
+
+   - react-redux: npm i redux react-redux --save
+
+   - react-router: npm i react-router-dom --save
+
 # JSX (Javascript Syntax Extension - JS XML): viết theo kiểu XML. Thay thế cho React.createElement()
 
 # JSX không phải HTML nhưng có thể viết giống HTML
